@@ -1,0 +1,18 @@
+package conta_bancaria;
+
+import conta_bancaria.ContaBancaria;
+
+@SuppressWarnings("unused")
+public class Main {
+
+	public static void main(String[] args) {
+		ContaBancaria cb = new ContaBancaria();
+		
+		cb.setNumConta(52);
+		cb.setTipoConta("CC");
+		cb.setDonoConta("Nickolas Alexandre");
+		
+		cb.estadoAtual();
+	}
+
+}

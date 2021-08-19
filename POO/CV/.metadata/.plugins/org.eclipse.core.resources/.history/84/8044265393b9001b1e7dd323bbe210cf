@@ -1,0 +1,20 @@
+package conta_bancaria;
+
+import conta_bancaria.ContaBancaria;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		ContaBancaria cb = new ContaBancaria();
+		
+		System.out.println("Qual o tipo de conta bancaria:");
+		System.out.println("CC-Conta Corrente\nCP-Conta Poupança");
+		String tipo = in.next();
+		
+		cb.abrirConta(tipo);
+		System.out.println(cb.getSaldo());
+	}
+
+}

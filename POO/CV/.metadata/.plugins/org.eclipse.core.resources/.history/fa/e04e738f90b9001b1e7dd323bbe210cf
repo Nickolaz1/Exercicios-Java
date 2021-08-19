@@ -1,0 +1,118 @@
+package conta_bancaria;
+
+public class ContaBancaria {
+	
+	public int numConta;
+	protected String tipoConta;
+	private String donoConta;
+	private float saldo;
+	private boolean statusConta;
+	
+	public ContaBancaria() {
+		setStatusConta(false);
+		setSaldo(0);
+	}
+	
+	public void abrirConta(String tipoConta) {
+		setTipoConta(tipoConta);
+		setStatusConta(true);
+		if(getTipoConta() == "cc") {
+			setSaldo(50);
+		}
+		else {
+			setSaldo(150);
+		}
+	}
+	
+	public void fecharConta() {
+		if(getSaldo() > 0) {
+			
+		}
+		else if(getSaldo() < 0) {
+			
+		}
+		else {
+			setStatusConta(false);
+		}
+	}
+	
+	public void sacar(int v) {
+		if(getStatusConta()) {
+			if(getSaldo() < v) {
+				
+			}
+			else {
+				setSaldo(getSaldo()-v);
+			}
+		}
+		else {
+			
+		}
+	}
+	
+	public void depositar(int v) {
+		if(getStatusConta()) {
+			setSaldo(getSaldo()+v);
+		}
+		else {
+			
+		}
+	}
+	
+	public void mensalidadeConta() {
+		double v;
+		if(getTipoConta() == "cc") {
+			v = 12;
+		}
+		else {
+			v = 20;
+		}
+		if(getStatusConta()) {
+			
+		}
+		else {
+			
+		}
+	}
+	
+	public int getNumConta() {
+		return numConta;
+	}
+
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+
+	public String getTipoConta() {
+		return tipoConta;
+	}
+
+	public void setTipoConta(String tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+
+	public String getDonoConta() {
+		return donoConta;
+	}
+
+	public void setDonoConta(String donoConta) {
+		this.donoConta = donoConta;
+	}
+
+	public float getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
+	public boolean getStatusConta() {
+		return statusConta;
+	}
+
+	public void setStatusConta(boolean statusConta) {
+		this.statusConta = statusConta;
+	}
+	
+}

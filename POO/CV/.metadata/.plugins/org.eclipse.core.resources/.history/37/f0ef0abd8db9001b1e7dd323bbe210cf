@@ -1,0 +1,56 @@
+package conta_bancaria;
+
+public class ContaBancaria {
+	
+	public int numConta;
+	protected String tipoConta;
+	private String donoConta;
+	private float saldo;
+	private boolean statusConta;
+	
+	public ContaBancaria() {
+		setStatusConta(false);
+		setSaldo(0);
+	}
+
+	public int getNumConta() {
+		return numConta;
+	}
+
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+
+	public String getTipoConta() {
+		return tipoConta;
+	}
+
+	public void setTipoConta(String tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+
+	public String getDonoConta() {
+		return donoConta;
+	}
+
+	public void setDonoConta(String donoConta) {
+		this.donoConta = donoConta;
+	}
+
+	public float getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
+	public boolean getStatusConta() {
+		return statusConta;
+	}
+
+	public void setStatusConta(boolean statusConta) {
+		this.statusConta = statusConta;
+	}
+	
+}

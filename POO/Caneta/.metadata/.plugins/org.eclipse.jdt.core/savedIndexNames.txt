@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/nickolas/Documentos/Exercicios/Exercicios Java/POO/Caneta/.metadata/.plugins/org.eclipse.jdt.core
+1829033203.index
+646308851.index

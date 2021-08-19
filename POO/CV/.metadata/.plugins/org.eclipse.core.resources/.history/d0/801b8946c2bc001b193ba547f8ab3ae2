@@ -1,0 +1,13 @@
+package conta_bancaria;
+
+import conta_bancaria.ContaBancaria;
+
+@SuppressWarnings("unused")
+public class Main {
+
+	public static void main(String[] args) {
+		ContaBancaria cb = new ContaBancaria();
+		
+	}
+
+}

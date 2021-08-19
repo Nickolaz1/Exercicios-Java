@@ -1,0 +1,24 @@
+package conta_bancaria;
+
+import conta_bancaria.ContaBancaria;
+
+@SuppressWarnings("unused")
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ContaBancaria cb = new ContaBancaria();
+		cb.setNumConta(52);
+		cb.abrirConta("CC");
+		cb.setDonoConta("Nickolas Alexandre");
+		
+		cb.estadoAtual();
+		
+		ContaBancaria cb2 = new ContaBancaria();
+		cb2.setDonoConta("Julia Rozena");
+		cb2.abrirConta("CP");
+		
+		cb2.estadoAtual();
+	}
+
+}
